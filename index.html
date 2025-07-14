@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator walut</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="converter">
+        <div class="converter__field">
+          <h1>Kalkulator walut</h1>
+          <label for="direction" class="converter__label">Rodzaj:</label>
+          <select id="direction" class="converter__input">
+            <option value="eurToPln">Euro → PLN</option>
+            <option value="plnToEur">PLN → Euro</option>
+          </select>
+        </div>
+    
+        <div class="converter__field">
+          <label for="amount" class="converter__label">Kwota:</label>
+          <input type="number" id="amount" class="converter__input" placeholder="np. 100" min="0">
+        </div>
+    
+        <div class="converter__field">
+          <label for="rate" class="converter__label">Kurs:</label>
+          <input type="number" id="rate" class="converter__input" placeholder="np. 4.5" min="0" step="0.01">
+        </div>
+    
+        <button class="converter__button" onclick="convert()">Przelicz</button>
+    
+        <div id="result" class="converter__result"></div>
+      </div>
+</body>
+  
+</html>
