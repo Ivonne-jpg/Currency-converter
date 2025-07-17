@@ -9,12 +9,14 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #d4b4b4;
+    /* background-color: #d4b4b4; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-image: url("../images/money.jpg");
+    background-repeat: no-repeat;
   }
   
   .converter {
